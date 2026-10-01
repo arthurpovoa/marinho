@@ -202,7 +202,9 @@
     var tile = lbList[lbIndex];
     var tone = (tile.className.match(/tone-\d/) || ['tone-1'])[0];
     lbImg.className = 'lightbox__img placeholder ' + tone;
-    lbImg.setAttribute('aria-label', 'Foto do projeto: ' + tile.getAttribute('data-title'));
+    var photo = $('#lb-photo');
+    photo.setAttribute('src', tile.getAttribute('data-full') || '');
+    photo.setAttribute('alt', tile.getAttribute('data-title') + ' (imagem ilustrativa)');
     lbTitle.textContent = tile.getAttribute('data-title');
     lbMeta.textContent = tile.getAttribute('data-meta');
     lbCount.textContent = (lbIndex + 1) + ' / ' + lbList.length;

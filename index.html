@@ -195,21 +195,8 @@
         <!-- SUBSTITUIR: foto principal de projeto, em tela cheia.
              Trocar o bloco abaixo por <img src="assets/img/hero.jpg" alt="" width="1920" height="1080" fetchpriority="high">
              (imagem acima da dobra: sem loading="lazy"). O véu escuro por cima garante a leitura do texto. -->
-        <div class="placeholder"></div>
-        <!-- Desenho técnico provisório (linhas finas) enquanto não há foto. REMOVER este <svg> ao colocar a foto real. -->
-        <svg class="hero__draw" viewBox="0 0 640 460" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true" focusable="false">
-          <path d="M0 420H640"/>
-          <rect x="112" y="116" width="456" height="30"/>
-          <rect x="146" y="146" width="388" height="274"/>
-          <path d="M168 154V292M184 154V292M200 154V292M216 154V292M232 154V292M248 154V292M264 154V292M280 154V292M296 154V292M312 154V292M328 154V292M344 154V292M360 154V292M376 154V292M392 154V292M408 154V292M424 154V292M440 154V292M456 154V292M472 154V292M488 154V292M504 154V292"/>
-          <rect x="146" y="292" width="388" height="128"/>
-          <path d="M146 292H534M232 292V420M318 292V420M404 292V420M146 356H534"/>
-          <path d="M60 250H146M60 250V262H146"/>
-          <circle cx="584" cy="318" r="62"/>
-          <path d="M584 380V420"/>
-          <circle cx="54" cy="378" r="40"/>
-          <path d="M54 418V420"/>
-        </svg>
+        <img src="https://images.unsplash.com/photo-1748063578185-3d68121b11ff?auto=format&fit=crop&q=75&w=2000" alt="" width="2000" height="1333" fetchpriority="high" decoding="async">
+        <!-- SUBSTITUIR: foto genérica (Unsplash) provisória; trocar por assets/img/hero.jpg com foto real de projeto da Marinho -->
         </div>
       <div class="hero__veil" aria-hidden="true"></div>
 
@@ -224,7 +211,8 @@
         </div>
         <p class="hero__foot">Mobiliário · Naming · Sinalização · Design gráfico · Exposições</p>
       </div>
-      <p class="hero__caption" aria-hidden="true">foto principal de projeto</p>
+      <!-- SUBSTITUIR: legenda real do projeto da foto principal (hoje: imagem ilustrativa) -->
+      <p class="hero__caption" aria-hidden="true">imagem ilustrativa</p>
     </section>
 
     <!-- ============ 2. SERVIÇOS ============ -->
@@ -340,62 +328,62 @@
              Para usar fotos reais, trocar o <span class="tile__fill"> por <img src="assets/img/projeto-01.jpg" alt="..." width height loading="lazy"> -->
         <ul class="grid" id="portfolio-grid">
           <li class="grid__item t-tall">
-            <button type="button" class="tile tone-1" data-cat="Residencial" data-title="Projeto residencial 01" data-meta="Residencial · 000 m² · Bairro, Goiânia" data-track="projeto-01">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=75&w=1600" class="tile tone-1" data-cat="Residencial" data-title="Projeto residencial 01" data-meta="Residencial · 000 m² · Bairro, Goiânia" data-track="projeto-01">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Projeto residencial 01</span><span class="tile__meta">Residencial · 000 m² · Bairro, Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-wide">
-            <button type="button" class="tile tone-4" data-cat="Comercial" data-title="Projeto comercial 02" data-meta="Comercial · 000 m² · Bairro, Goiânia" data-track="projeto-02">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1705909773284-09009558300a?auto=format&fit=crop&q=75&w=1600" class="tile tone-4" data-cat="Comercial" data-title="Projeto comercial 02" data-meta="Comercial · 000 m² · Bairro, Goiânia" data-track="projeto-02">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1705909773284-09009558300a?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Projeto comercial 02</span><span class="tile__meta">Comercial · 000 m² · Bairro, Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-mid">
-            <button type="button" class="tile tone-5" data-cat="Interiores" data-title="Interiores 03" data-meta="Interiores · 000 m² · Bairro, Goiânia" data-track="projeto-03">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=75&w=1600" class="tile tone-5" data-cat="Interiores" data-title="Interiores 03" data-meta="Interiores · 000 m² · Bairro, Goiânia" data-track="projeto-03">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Interiores 03</span><span class="tile__meta">Interiores · 000 m² · Bairro, Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-short">
-            <button type="button" class="tile tone-3" data-cat="Branding" data-title="Identidade visual 04" data-meta="Branding · Naming e identidade · Goiânia" data-track="projeto-04">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1777652918753-d66882b15391?auto=format&fit=crop&q=75&w=1600" class="tile tone-3" data-cat="Branding" data-title="Identidade visual 04" data-meta="Branding · Naming e identidade · Goiânia" data-track="projeto-04">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1777652918753-d66882b15391?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Identidade visual 04</span><span class="tile__meta">Branding · Naming e identidade · Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-tall">
-            <button type="button" class="tile tone-2" data-cat="Sinalização" data-title="Sinalização 05" data-meta="Sinalização · Fachada e interna · Goiânia" data-track="projeto-05">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1560339845-a9903702afd9?auto=format&fit=crop&q=75&w=1600" class="tile tone-2" data-cat="Sinalização" data-title="Sinalização 05" data-meta="Sinalização · Fachada e interna · Goiânia" data-track="projeto-05">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1560339845-a9903702afd9?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Sinalização 05</span><span class="tile__meta">Sinalização · Fachada e interna · Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-tall">
-            <button type="button" class="tile tone-4" data-cat="Mobiliário" data-title="Mobiliário 06" data-meta="Mobiliário · Peça sob medida · Goiânia" data-track="projeto-06">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1583345445254-f6522c369c11?auto=format&fit=crop&q=75&w=1600" class="tile tone-4" data-cat="Mobiliário" data-title="Mobiliário 06" data-meta="Mobiliário · Peça sob medida · Goiânia" data-track="projeto-06">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1583345445254-f6522c369c11?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Mobiliário 06</span><span class="tile__meta">Mobiliário · Peça sob medida · Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-mid">
-            <button type="button" class="tile tone-5" data-cat="Residencial" data-title="Projeto residencial 07" data-meta="Residencial · 000 m² · Bairro, Goiânia" data-track="projeto-07">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1722421492323-eaf9c401befe?auto=format&fit=crop&q=75&w=1600" class="tile tone-5" data-cat="Residencial" data-title="Projeto residencial 07" data-meta="Residencial · 000 m² · Bairro, Goiânia" data-track="projeto-07">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1722421492323-eaf9c401befe?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Projeto residencial 07</span><span class="tile__meta">Residencial · 000 m² · Bairro, Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-short">
-            <button type="button" class="tile tone-3" data-cat="Comercial" data-title="Projeto comercial 08" data-meta="Comercial · 000 m² · Bairro, Goiânia" data-track="projeto-08">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1706074793638-da28b90ea8ae?auto=format&fit=crop&q=75&w=1600" class="tile tone-3" data-cat="Comercial" data-title="Projeto comercial 08" data-meta="Comercial · 000 m² · Bairro, Goiânia" data-track="projeto-08">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1706074793638-da28b90ea8ae?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Projeto comercial 08</span><span class="tile__meta">Comercial · 000 m² · Bairro, Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-wide">
-            <button type="button" class="tile tone-6" data-cat="Exposições" data-title="Exposição 09" data-meta="Exposições · Montagem expositiva · Goiânia" data-track="projeto-09">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1766802981817-776406db6807?auto=format&fit=crop&q=75&w=1600" class="tile tone-6" data-cat="Exposições" data-title="Exposição 09" data-meta="Exposições · Montagem expositiva · Goiânia" data-track="projeto-09">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1766802981817-776406db6807?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Exposição 09</span><span class="tile__meta">Exposições · Montagem expositiva · Goiânia</span></span>
             </button>
           </li>
           <li class="grid__item t-wide">
-            <button type="button" class="tile tone-1" data-cat="Interiores" data-title="Interiores 10" data-meta="Interiores · 000 m² · Bairro, Goiânia" data-track="projeto-10">
-              <span class="tile__fill"></span>
+            <button type="button" data-full="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=75&w=1600" class="tile tone-1" data-cat="Interiores" data-title="Interiores 10" data-meta="Interiores · 000 m² · Bairro, Goiânia" data-track="projeto-10">
+              <span class="tile__fill"><img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1100" loading="lazy" decoding="async"></span>
               <span class="tile__cap"><span class="tile__title">Interiores 10</span><span class="tile__meta">Interiores · 000 m² · Bairro, Goiânia</span></span>
             </button>
           </li>
@@ -415,9 +403,9 @@
         </div>
 
         <div class="office__images" aria-hidden="true">
-          <!-- SUBSTITUIR: fotos do escritório ou de obra -->
-          <div class="placeholder placeholder--office-a tone-2"><span class="caption caption--in">foto do escritório</span></div>
-          <div class="placeholder placeholder--office-b tone-5"><span class="caption caption--in">detalhe de obra</span></div>
+          <!-- SUBSTITUIR: fotos genéricas (Unsplash) provisórias; trocar por fotos reais do escritório ou de obra -->
+          <div class="placeholder placeholder--office-a tone-2"><img src="https://images.unsplash.com/photo-1682145938720-261e5364fe5a?auto=format&fit=crop&q=75&w=900" alt="" width="900" height="1125" loading="lazy" decoding="async"></div>
+          <div class="placeholder placeholder--office-b tone-5"><img src="https://images.unsplash.com/photo-1649688066810-59a394fc0fef?auto=format&fit=crop&q=75&w=600" alt="" width="600" height="600" loading="lazy" decoding="async"></div>
         </div>
       </div>
 
@@ -766,9 +754,7 @@
       </button>
 
       <figure class="lightbox__figure">
-        <div class="lightbox__img placeholder tone-1" id="lb-img" role="img" aria-label="Foto do projeto">
-          <span class="caption caption--in">foto do projeto</span>
-        </div>
+        <div class="lightbox__img placeholder tone-1" id="lb-img"><img id="lb-photo" alt="" decoding="async"></div>
         <figcaption class="lightbox__cap">
           <strong id="lb-title"></strong>
           <span id="lb-meta"></span>
