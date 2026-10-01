@@ -1,0 +1,14 @@
+{
+  "name": "Marinho Arquitetura e Design",
+  "short_name": "Marinho",
+  "description": "Arquitetura residencial e comercial, interiores, brand design, naming e sinalização em Goiânia.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#49308E",
+  "theme_color": "#49308E",
+  "icons": [
+    { "src": "assets/favicon/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/favicon/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
