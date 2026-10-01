@@ -61,10 +61,10 @@
   });
 
   /* ---------------------------------------------------------
-     Header: sombra ao rolar
+     Header: transparente sobre o hero, creme depois que a página rola
      --------------------------------------------------------- */
   var header = $('.site-header');
-  function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 8); }
+  function onScroll() { header.classList.toggle('is-scrolled', window.scrollY > 24); }
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
@@ -78,6 +78,7 @@
 
   function openMenu() {
     menu.hidden = false;
+    header.classList.add('menu-open');   // header volta ao estilo claro sobre o fundo escuro do menu
     menuBtn.setAttribute('aria-expanded', 'true');
     menuBtn.setAttribute('aria-label', 'Fechar menu');
     document.documentElement.classList.add('no-scroll');
@@ -87,6 +88,7 @@
 
   function closeMenu(returnFocus) {
     menu.hidden = true;
+    header.classList.remove('menu-open');
     menuBtn.setAttribute('aria-expanded', 'false');
     menuBtn.setAttribute('aria-label', 'Abrir menu');
     document.documentElement.classList.remove('no-scroll');
