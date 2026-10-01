@@ -5,6 +5,17 @@
 (function () {
   'use strict';
 
+  /* Foto que não carrega some e deixa o bloco de cor da marca no lugar (sem ícone de imagem quebrada) */
+  function dropBrokenImg(img) { img.style.display = 'none'; }
+  document.addEventListener('error', function (e) {
+    if (e.target && e.target.tagName === 'IMG') dropBrokenImg(e.target);
+  }, true);
+  window.addEventListener('load', function () {
+    Array.prototype.forEach.call(document.images, function (img) {
+      if (img.complete && img.naturalWidth === 0 && img.getAttribute('src')) dropBrokenImg(img);
+    });
+  });
+
   /* ---------------------------------------------------------
      Constante única do WhatsApp (número + mensagem padrão).
      Todos os links [data-wa] e o formulário usam estes valores.
@@ -202,7 +213,7 @@
     var tile = lbList[lbIndex];
     var tone = (tile.className.match(/tone-\d/) || ['tone-1'])[0];
     lbImg.className = 'lightbox__img placeholder ' + tone;
-    var photo = $('#lb-photo');
+    var photo = $('#lb-photo'); photo.style.display = '';
     photo.setAttribute('src', tile.getAttribute('data-full') || '');
     photo.setAttribute('alt', tile.getAttribute('data-title') + ' (imagem ilustrativa)');
     lbTitle.textContent = tile.getAttribute('data-title');
